@@ -1,0 +1,1 @@
+Para instalarmos o Tailwind em nosso projeto, basta seguirmos o passo a passo encontrado diretamento no site oficial do Tailwind: https://tailwindcss.com/docs/installation

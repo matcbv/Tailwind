@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+    A camada base é usada para definir estilos de nível básico que afetam o HTML e o layout geral da página. Estes são estilos que você geralmente deseja aplicar globalmente a todos os elementos ou a tipos específicos de elementos.
+    
+    Alguns dos tipos de estilos que caracterizam a camada base são:
+
+    - Reset de CSS: Normalmente inclui estilos para redefinir ou normalizar as configurações padrão dos navegadores.
+    - Tipografia: Define estilos básicos para fontes, tamanhos de texto, e alinhamento de parágrafos e cabeçalhos.
+    - Estilos Globais: Qualquer estilo global que você queira aplicar a todos os elementos ou a um grupo de elementos.
+
+
+    A camada components é usada para definir estilos específicos para componentes reutilizáveis e blocos de interface. Estes são estilos que você aplica a partes específicas do seu layout que são usados em vários lugares, como botões, cartões, e formulários.
+
+    Alguns dos tipos de estilos que caracterizam a camada base são:
+
+    - Estilos de Componentes: Definem como componentes específicos devem parecer, incluindo estilo de botões, modais, tabelas, etc.
+    - Composição de Estilos: Pode usar a diretiva @apply para aplicar um conjunto de classes utilitárias a um componente.
+
+
+    A camada utilities é usada para adicionar classes utilitárias que fornecem estilos específicos e aplicáveis individualmente. Esses estilos são específicos e normalmente usados para ajustes rápidos ou para aplicar estilos diretamente nos elementos.
+
+    Alguns dos tipos de estilos que caracterizam a camada base são:
+
+    - Utilitários de Estilo: Pequenas classes para aplicar estilos como margem, padding, cor de fundo, alinhamento, e muito mais.
+    - Ajustes Específicos: Permitem a aplicação de estilos diretamente em elementos sem a necessidade de criar classes específicas para cada ajuste.
+*/

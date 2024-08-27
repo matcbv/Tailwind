@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+    O @layer permite criar e adicionar novas camadas ao CSS, que podem ser usadas para organizar seu código de maneira mais eficiente. Também pode ser usado para garantir que as regras de estilo sejam aplicadas na ordem correta, sobrepondo-se ou não sobre outros estilos conforme necessário.
+
+    As camadas mais abaixo sobrescrevendo as camadas acima se houver conflitos, seguindo o padrão do CSS.
+*/
+@layer components{
+
+    .default-btn{
+        @apply bg-lime-600 text-white px-4 py-2
+    }
+
+    .default-btn:hover{
+        @apply bg-lime-900
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Fundamentos do Tailwind</title>
+</head>
+<body>
+    <!-- Todos os estilso aplicados pelo Tailwind são feitos através de clases. -->
+    <h1 class="bg-slate-600 text-white hover:text-blue-950">Tudo são classes</h1>
+    <p class="bg-blue-950">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error consectetur natus non fuga quo harum aliquid iste aliquam? Ducimus obcaecati voluptas laudantium officiis nemo cupiditate tempora provident necessitatibus, nihil sapiente?</p>
+
+    <!--
+        O Tailwind também possui um classes para breakpoints, simulando de media queries. O Tailwind segue o princípio de mobile first, ou seja, devemos aplicar nossos estilos pensando primeiramento em dispositivos mobile.
+
+        Obs.: Para entender o que cada classe faz, basta sobrepormos o mouse nela .
+    -->
+     <div class="bg-yellow-300 w-10 h-10 md:w-20 md:h-20 md:bg-yellow-400 lg:w-40 lg:h-40 lg:bg-yellow-600"></div>
+    <!--
+        As classes disponíveis são:
+        Small (sm): Largura mínima: 640px
+        Medium (md): Largura mínima: 768px
+        Large (lg): Largura mínima: 1024px
+        Extra Large (xl): Largura mínima: 1280px
+        2XL (2xl): Largura mínima: 1536px
+    -->
+</body>
+</html>
