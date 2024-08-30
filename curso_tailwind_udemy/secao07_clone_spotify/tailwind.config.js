@@ -12,9 +12,21 @@ module.exports = {
         'purple-main': '#2D46B9',
         'green-main': '#1ED760'
       },
-      backgroundImage: theme => ({
-
-      })
+      backgroundImage: {
+        'hero_background': 'url("./public/assets/images/bursts.svg")',
+        'hero_background_mobile': 'url("./public/images/bursts.svg")'  
+      },
+      backgroundSize: {
+        '175%': '175%',
+        '195%': '195%'
+      },
+      backgroundPosition: {
+        'banner': '46% 4%',
+        'banner-mobile': 'top 25% center'
+      },
+      fontSize: {
+        '9xl': '9rem'
+      }
     },
   },
   plugins: [],
