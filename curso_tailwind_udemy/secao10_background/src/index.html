@@ -1,11 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <title>Exemplo de Background com Tailwind CSS</title>
+  <style>
+    /* Adicionando uma classe para background-image personalizada */
+    .custom-bg {
+      background-image: url('../img/wallpaper.jpg');
+    }
+  </style>
 </head>
-<body>
-    
+<body class="p-8">
+    <!--
+        bg-{color}: Define a cor de fundo.
+        bg-{image}: Define a imagem de fundo.
+        bg-cover: Faz a imagem de fundo cobrir o elemento.
+        bg-contain: Ajusta a imagem de fundo dentro do elemento.
+        bg-no-repeat: Impede a repetição da imagem de fundo.
+        bg-repeat: Repete a imagem de fundo.
+        bg-repeat-x: Repete a imagem de fundo horizontalmente.
+        bg-repeat-y: Repete a imagem de fundo verticalmente.
+        bg-position-{position}: Define a posição da imagem de fundo.
+        bg-gradient-to-{direction}: Define um gradiente de fundo.
+        bg-opacity-{value}: Define a opacidade da cor de fundo.
+        bg-[length]: Define o tamanho da imagem de fundo.
+    -->
+  <div class="space-y-8">
+
+        <!-- Background Color -->
+        <div class="bg-blue-500 text-white p-6">
+        Fundo azul com texto branco.
+        </div>
+
+        <!-- Background Image -->
+        <div class="bg-[url('../img/wallpaper.jpg')] bg-cover bg-center h-64 flex items-center justify-center text-white text-xl font-bold">
+            Imagem de fundo com cobertura total e centralizada.
+        </div>
+
+        <!-- Background Image with Contain -->
+        <div class="bg-[url('../img/wallpaper.jpg')] bg-contain bg-center h-64 flex items-center justify-center text-white text-xl font-bold">
+            Imagem de fundo ajustada dentro do elemento.
+        </div>
+
+        <!-- Background No Repeat -->
+        <div class="bg-[url('../img/wallpaper.jpg')] bg-no-repeat bg-top h-64 flex items-center justify-center text-white text-xl font-bold">
+            Imagem de fundo sem repetição.
+        </div>
+
+        <!-- Background Repeat -->
+        <div class="bg-[url('../img/wallpaper.jpg')] bg-repeat bg-bottom h-64 flex items-center justify-center text-white text-xl font-bold">
+            Imagem de fundo repetida.
+        </div>
+
+        <!-- Background Repeat X -->
+        <div class="bg-[url('../img/wallpaper.jpg')] bg-repeat-x bg-left h-64 flex items-center justify-center text-white text-xl font-bold">
+            Imagem de fundo repetida horizontalmente.
+        </div>
+
+        <!-- Background Repeat Y -->
+        <div class="bg-[url('../img/wallpaper.jpg')] bg-repeat-y bg-right h-64 flex items-center justify-center text-white text-xl font-bold">
+            Imagem de fundo repetida verticalmente.
+        </div>
+
+        <!-- Background Position -->
+        <div class="bg-[url('../img/wallpaper.jpg')] bg-cover bg-top h-64 flex items-center justify-center text-white text-xl font-bold">
+            Imagem de fundo no topo do elemento.
+        </div>
+
+        <!-- Background Gradient -->
+        <div class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 h-64 flex items-center justify-center text-white text-xl font-bold">
+            Gradiente do azul ao rosa passando pelo roxo.
+        </div>
+
+        <!-- Background Opacity -->
+        <div class="bg-blue-500 bg-opacity-50 text-white p-6">
+            Fundo azul com 50% de opacidade.
+        </div>
+
+        <!-- Background Size -->
+        <div class="bg-[url('../img/wallpaper.jpg')] bg-[length:200px_100px] bg-no-repeat bg-top h-64 flex items-center justify-center text-white text-xl font-bold">
+            Imagem de fundo com tamanho personalizado.
+        </div>
+
+        <!-- Custom Background Image Class -->
+        <div class="custom-bg bg-cover bg-center h-64 flex items-center justify-center text-white text-xl font-bold">
+            Imagem de fundo personalizada com classe customizada.
+        </div>
+
+    </div>
 </body>
 </html>

@@ -7,12 +7,17 @@
     <title>Grid com Tailwind</title>
 </head>
 <body>
-    <h1>Grid Layout</h1>
-    <div class="grid bg-red-700 grid-cols-4 p-2">
-        <div class="bg-red-300 border-2 border-red-400 p-4 text-center">1</div>
-        <div class="bg-red-300 border-2 border-red-400 p-4 text-center">2</div>
-        <div class="bg-red-300 border-2 border-red-400 p-4 text-center">3</div>
-        <div class="bg-red-300 border-2 border-red-400 p-4 text-center">4</div>
+    <!-- grid (display: grid;) -->
+    <div class="grid grid-cols-3 gap-4">
+        <div class="bg-red-200 p-2">Item 1</div>
+        <div class="bg-green-200 p-2">Item 2</div>
+        <div class="bg-blue-200 p-2">Item 3</div>
+    </div>
+
+    <!-- inline-grid (display: inline-grid;) -->
+    <div class="inline-grid grid-cols-2 gap-4">
+        <div class="bg-yellow-200 p-2">Item 1</div>
+        <div class="bg-orange-200 p-2">Item 2</div>
     </div>
 </body>
 </html>

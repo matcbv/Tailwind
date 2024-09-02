@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Alinhamento</title>
+</head>
+<body>
+    <!--
+        justify-items-{direction} (justify-items: {direction};): Alinha os itens ao longo do eixo principal dentro de suas células. O {direction} pode ser start, end, center, stretch.
+    -->
+    <div class="grid justify-items-center grid-cols-2 border border-black">
+        <div>Item 1</div>
+        <div>Item 2</div>
+    </div>
+
+    <!--
+        items-{direction} (align-items: {direction};): Alinha os itens ao longo do eixo transversal dentro de suas células. O {direction} pode ser start, end, center, stretch.
+    -->
+    <div class="grid items-center grid-cols-2 h-20 border border-black">
+        <div>Item 1</div>
+        <div>Item 2</div>
+    </div>
+    
+    <!--
+        place-items-{direction} (place-items: {direction} {direction};): Shorthand para justify-items e align-items. O primeiro {direction} alinha os itens ao longo do eixo principal e o segundo ao longo do eixo transversal.
+    -->
+    <div class="grid place-items-center grid-cols-2 border border-black">
+        <div>Item 1</div>
+        <div>Item 2</div>
+    </div>
+    
+    <!--
+        justify-{direction} (justify-content: {direction};): Alinha o conteúdo ao longo do eixo principal dentro do contêiner grid. O {direction} pode ser start, end, center, between, around, evenly.
+    -->
+    <div class="grid justify-center grid-cols-3 border border-black">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+    
+    <!--
+        content-{direction} (align-content: {direction};): Alinha o conteúdo ao longo do eixo transversal dentro do contêiner grid. O {direction} pode ser start, end, center, between, around, stretch.
+    -->
+    <div class="grid content-center grid-cols-3 border border-black">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+    
+    <!--
+        place-content-{direction} (place-content: {direction} {direction};): Shorthand para justify-content e align-content. O primeiro {direction} alinha o conteúdo ao longo do eixo principal e o segundo ao longo do eixo transversal.
+    -->
+    <div class="grid place-content-between grid-cols-3 border border-black">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+    
+    <!--
+        align-self-{direction} (align-self: {direction};): Alinha um item específico ao longo do eixo transversal dentro de sua célula. O {direction} pode ser auto, start, end, center, baseline, stretch.
+    -->
+    <div class="grid grid-cols-2 border border-black">
+        <div class="self-end">Item 1</div>
+        <div>Item 2</div>
+    </div>
+
+    <!--
+        justify-self-{direction} (justify-self: {direction};): Alinha um item específico ao longo do eixo principal dentro de sua célula. O {direction} pode ser auto, start, end, center, stretch.
+    -->
+    <div class="grid grid-cols-2 border border-black">
+        <div class="justify-self-end">Item 1</div>
+        <div>Item 2</div>
+    </div>      
+</body>
+</html>

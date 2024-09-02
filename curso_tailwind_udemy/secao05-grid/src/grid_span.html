@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Grid Columns</title>
+</head>
+<body>
+    <!-- col-span-{n} (grid-column: span n / span n;) -->
+    <div class="grid grid-cols-4 gap-4">
+        <div class="col-span-2 bg-red-200 p-2">Item que ocupa 2 colunas</div>
+        <div class="bg-green-200 p-2">Item 2</div>
+        <div class="bg-blue-200 p-2">Item 3</div>
+    </div>
+    
+   <!-- row-span-{n} (grid-row: span n / span n;) --> 
+   <div class="grid grid-rows-3 gap-4">
+    <div class="row-span-2 bg-red-200 p-2">Item que ocupa 2 linhas</div>
+    <div class="bg-green-200 p-2">Item 2</div>
+  </div>  
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Tipografia</title>
+</head>
+<body>
+    <!--
+        font-{family}: Define a fonte do texto.
+        text-{size}: Define o tamanho do texto.
+        font-{weight}: Define o peso da fonte.
+        leading-{size}: Define a altura da linha do texto.
+        tracking-{size}: Define o espaçamento entre letras.
+        text-{color}: Define a cor do texto.
+        text-{align}: Define o alinhamento do texto.
+        text-{transform}: Define a transformação do texto.
+        text-{decoration}: Define a decoração do texto.
+        text-{indent}: Define a indentação do texto.
+
+        Obs.: Podemos adicionar novas fontes para o Tailwind costumizando a propriedade fontFamily em tailwindcss.config.js.
+    -->
+    <div class="max-w-2xl mx-auto">
+        <h1 class="text-4xl font-bold text-gray-800 text-center mb-4 leading-tight tracking-tight">
+          Exemplo Completo de Tipografia com Tailwind CSS
+        </h1>
+        <p class="text-base font-light text-gray-600 text-justify leading-relaxed tracking-normal">
+          Este é um exemplo de parágrafo utilizando várias classes de tipografia do Tailwind CSS. Aqui, a fonte é leve, o tamanho é base, a cor é cinza escuro e o texto está justificado. A altura da linha é relaxada e o espaçamento entre letras está normal.
+        </p>
+        <p class="text-xl font-medium text-blue-600 text-right leading-snug tracking-wide">
+          Este parágrafo usa um tamanho de texto maior (extra grande), peso médio, cor azul, alinhamento à direita, altura de linha ajustada e espaçamento entre letras mais amplo.
+        </p>
+        <p class="text-lg font-bold text-green-500 text-left text-uppercase leading-normal tracking-tighter underline">
+          Este parágrafo apresenta um texto com tamanho grande, peso bold, cor verde, alinhamento à esquerda, transformação em maiúsculas, altura de linha normal, espaçamento entre letras mais apertado e sublinhado.
+        </p>
+        <p class="text-md font-normal text-red-400 text-center text-lowercase leading-loose tracking-wide line-through mt-6">
+          Por fim, este parágrafo utiliza um tamanho de texto médio, peso normal, cor vermelha, alinhamento centralizado, transformação em minúsculas, altura de linha mais solta, espaçamento entre letras mais amplo e linha através do texto.
+        </p>
+        <p class="font-arial">Fonte personalizada (Arial)</p>
+      </div>
+</body>
+</html>

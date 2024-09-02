@@ -2,11 +2,7 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {
-      backgroundImage: {
-        'blackhole': 'url("../img/wallpaper.jpg")'
-      }
-    },
+    extend: {},
   },
   plugins: [],
 }

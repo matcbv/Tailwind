@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Alinhamento</title>
+</head>
+<body>
+    <!-- justify-{direction} (justify-content: {direction};): Alinha os itens ao longo do eixo principal. O {direction} pode ser start, end, center, between, around, evenly. -->
+    <div class="flex justify-center border border-black">
+        <div>Item 1</div>
+        <div>Item 2</div>
+    </div>
+
+    <!-- items-{direction} (align-items: {direction};): Alinha os itens ao longo do eixo transversal. O {direction} pode ser start, end, center, baseline, stretch. -->
+    <div class="flex items-center border border-black">
+        <div>Item 1</div>
+        <div>Item 2</div>
+    </div>
+
+    <!-- content-{direction} (align-content: {direction};): Alinha o conteúdo ao longo do eixo transversal, afetando o espaço entre linhas de itens. O {direction} pode ser start, end, center, between, around, evenly. -->
+    <div class="flex flex-wrap content-between border border-black">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+
+    <!-- self-{direction} (align-self: {direction};): Alinha um item específico ao longo do eixo transversal dentro de sua célula. O {direction} pode ser auto, start, end, center, baseline, stretch. -->
+    <div class="flex border border-black">
+        <div class="self-end">Item 1</div>
+        <div>Item 2</div>
+    </div>
+</body>
+</html>

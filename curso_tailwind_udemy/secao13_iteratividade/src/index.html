@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Bordas</title>
+</head>
+<body>
+    <!-- hover:{property}: Aplica estilos quando o cursor está sobre o elemento. -->
+    <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">
+        Hover sobre mim
+    </button>
+    <br>
+
+    <!-- focus:{property}: Aplica estilos quando o elemento recebe foco (como ao clicar ou tabular para o elemento). -->
+    <label for="input">Input</label>
+    <input type="text" id="input" class="border border-gray-300 p-2 rounded focus:outline-none focus:border-blue-500">
+    <br>
+
+    <!-- active:{property}: Aplica estilos quando o elemento está sendo clicado. -->
+    <button class="bg-blue-500 text-white py-2 px-4 rounded active:bg-blue-800 active:scale-95">
+        Clique em mim
+    </button>
+    <br>
+
+    <!--
+        visited:{property}: Aplica estilos a links que foram visitados.
+        link:{property}: Aplica estilos a links não visitados.
+    -->
+    <a href="#" class="text-blue-500 hover:text-blue-700 visited:text-purple-600">
+        Clique aqui
+    </a>
+    <br>
+
+    <!-- group: Permite estilizar elementos filhos com base no estado do elemento pai. -->
+    <div class="group p-4 border border-gray-300 rounded">
+        <p class="text-gray-700 group-hover:text-blue-500">
+          Este texto muda de cor quando o pai é hoverado.
+        </p>
+    </div>
+    <br>
+
+    <!-- disabled:{property}: Aplica estilos a elementos desativados. -->
+    <button class="bg-blue-500 text-white py-2 px-4 rounded disabled:bg-gray-400 disabled:text-gray-600" disabled>
+        Botão Desativado
+    </button>
+    <br>
+
+    <!-- peer: Aplica estilos a um elemento baseado no estado de outro elemento que possui a classe peer. -->
+    <label for="checkbox" class="peer bg-blue-500 text-white p-2 rounded">Checkbox</label> 
+    <input type="checkbox" id="checkbox" class="peer-hidden"/>
+    <span class="text-black block mt-2 peer-checked:bg-green-500">Muda de cor quando o checkbox é marcado</span>
+    
+    <!-- appearance-none: Remove o estilo padrão do navegador de elementos, como inputs e selects. -->
+    <input class="appearance-none border border-gray-500 p-2 rounded" type="text" placeholder="Input sem estilo padrão do navegador">
+
+    <!-- cursor-{type}: Define o tipo de cursor ao passar o mouse sobre o elemento. -->
+    <button class="cursor-pointer bg-blue-500 text-white p-2 rounded">Cursor pointer ao passar o mouse</button>
+
+    <!-- pointer-events-{state}: Controla se um elemento pode ou não receber eventos de ponteiro (cliques, hover, etc.). -->
+    <div class="pointer-events-none bg-gray-500 p-4 rounded">Este elemento não responde a cliques ou hover</div>
+
+    <!-- resize: Permite que o elemento seja redimensionado. -->
+    <label for="textarea01">Primeira textarea</label>
+    <textarea id="textarea01" class="resize border border-gray-500 p-2 rounded">Área de texto redimensionável</textarea>
+
+    <!-- resize: Desabilita o redimensionamento do elemento. -->
+    <label for="textarea02">Segunda textarea</label>
+    <textarea id="textarea02" class="resize-none border border-gray-500 p-2 rounded">Área de texto redimensionável</textarea>
+
+    <!-- resize-{direction}: Permite redimensionar o elemento apenas em uma direção específica (horizontal, vertical, ou ambos). -->
+    <label for="textarea03">Terceira textarea</label>
+    <textarea id="textarea02" class="resize-y border border-gray-500 p-2 rounded">Redimensionável apenas verticalmente</textarea>
+
+    <!-- select-{state}: Controla se o texto dentro do elemento pode ser selecionado pelo usuário. -->
+    <p class="select-none bg-gray-200 p-4 rounded">Este texto não pode ser selecionado</p>
+    <p class="select-text bg-gray-200 p-4 rounded">Este texto pode ser selecionado</p>
+</body>
+</html>

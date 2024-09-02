@@ -13,8 +13,8 @@ module.exports = {
         'green-main': '#1ED760'
       },
       backgroundImage: {
-        'hero_background': 'url("./public/assets/images/bursts.svg")',
-        'hero_background_mobile': 'url("./public/images/bursts.svg")'  
+        'hero-background': 'url("./public/assets/images/bursts.svg")',
+        'hero-background-mobile': 'url("./public/images/bursts.svg")'  
       },
       backgroundSize: {
         '175%': '175%',

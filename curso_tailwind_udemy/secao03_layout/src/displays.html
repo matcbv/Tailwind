@@ -7,13 +7,21 @@
     <title>Layouts com Tailwind</title>
 </head>
 <body>
-    <div class="container mt-10 bg-amber-100 p-4">
-        <div class="inline-block bg-amber-300">
-            <p>Div interna 01</p>
-        </div>
-        <div class="inline-block bg-amber-500 z-10 -ml-10">
-            <p>Div interna 02</p>
-        </div>
+    <!--  block (display: block;) -->
+    <div class="block bg-gray-200">
+        Este é um bloco que ocupa toda a largura disponível.
     </div>
+
+    <!-- inline-block (display: inline-block;) -->
+    <div class="inline-block bg-blue-200 p-2">
+        Bloco Inline
+      </div>
+      <div class="inline-block bg-blue-200 p-2">
+        Outro Bloco Inline
+    </div>
+    
+    <!-- inline (display: inline;) -->
+    <span class="inline text-red-500">Texto Inline</span>
+    <span class="inline text-blue-500">Mais Texto Inline</span>
 </body>
 </html>

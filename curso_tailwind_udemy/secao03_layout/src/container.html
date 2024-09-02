@@ -8,10 +8,11 @@
 </head>
 <body>
     <!-- 
-        A classe container do Tailwind CSS é uma classe utilitária usada para centralizar e restringir a largura do conteúdo em uma página web. A largura do container varia de acordo com os pontos de quebra (breakpoints) padrão do Tailwind, garantindo que ele se ajuste de forma apropriada em diferentes tamanhos de tela. É possível personalizar esses pontos de quebra da maneira que nos for conveniente, incluindo a largura do container para cada ponto de quebra.
+        container: A classe container no Tailwind CSS aplica uma largura máxima fixa e centraliza o conteúdo horizontalmente no viewport. A largura do contêiner é responsiva e varia de acordo com os breakpoints (sm, md, lg, xl, 2xl). É útil para criar seções com largura limitada e centralizadas na página.
     -->
-    <div class="container bg-red-300 border-2 border-red-500 mx-auto md:bg-green-300 md:border-green-700">
-        <p>Esse é um exemplo de container.</p>
-    </div>
+    <div class="container mx-auto">
+        <h1 class="text-center">Título Centralizado</h1>
+        <p>Este conteúdo está dentro de um container centralizado.</p>
+      </div>
 </body>
 </html>

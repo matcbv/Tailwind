@@ -1,0 +1,94 @@
+Algumas das propridades mais utilizadas que necessitam de customisação em grande parte dos casos são:
+
+Tamanhos de Container:
+
+    max-w-{size} (largura máxima)
+    w-{size} (largura)
+    min-w-{size} (largura mínima)
+    h-{size} (altura)
+    min-h-{size} (altura mínima)
+    max-h-{size} (altura máxima)
+
+
+Espaçamento
+
+    p-{size} (padding)
+    pt-{size} (padding-top)
+    pr-{size} (padding-right)
+    pb-{size} (padding-bottom)
+    pl-{size} (padding-left)
+    m-{size} (margin)
+    mt-{size} (margin-top)
+    mr-{size} (margin-right)
+    mb-{size} (margin-bottom)
+    ml-{size} (margin-left)
+    space-x-{size} (espaçamento horizontal entre itens)
+    space-y-{size} (espaçamento vertical entre itens)
+
+
+Fontes e Texto
+
+    text-{size} (tamanho da fonte)
+    font-{weight} (peso da fonte)
+    leading-{size} (altura da linha)
+    tracking-{size} (espaçamento entre letras)
+    text-{color} (cor do texto)
+    text-{color}-light (variações de cor do texto)
+
+
+Cores e Fundo
+
+    bg-{color} (cor de fundo)
+    bg-{color}-light (variações de cor de fundo)
+    border-{color} (cor da borda)
+    border-{color}-light (variações de cor da borda)
+    opacity-{value} (opacidade)
+
+
+Bordas e Arredondamentos
+
+    border-{size} (tamanho da borda)
+    border-{color} (cor da borda)
+    rounded-{size} (arredondamento dos cantos)
+    rounded-t-{size} (arredondamento do canto superior)
+    rounded-r-{size} (arredondamento do canto direito)
+    rounded-b-{size} (arredondamento do canto inferior)
+    rounded-l-{size} (arredondamento do canto esquerdo)
+
+
+Sombra e Transições
+
+    shadow-{size} (sombra)
+    shadow-md (sombra média)
+    shadow-lg (sombra grande)
+    transition-{property} (transição de propriedades CSS)
+
+
+Gradientes e Backgrounds
+
+    bg-gradient-to-{direction} (gradientes de fundo)
+    from-{color} (cor inicial do gradiente)
+    to-{color} (cor final do gradiente)
+    via-{color} (cor intermediária do gradiente)
+
+
+Exibição e Posicionamento
+
+    block, inline, inline-block, hidden (display)
+    relative, absolute, fixed, sticky (posicionamento)
+    z-{index} (índice Z)
+
+
+Flexbox e Grid
+
+    flex-{direction} (direção do flex)
+    grid-cols-{n} (número de colunas do grid)
+    grid-rows-{n} (número de linhas do grid)
+
+
+Responsividade
+
+    sm:{class} (estilos para telas pequenas)
+    md:{class} (estilos para telas médias)
+    lg:{class} (estilos para telas grandes)
+    xl:{class} (estilos para telas extra grandes)
